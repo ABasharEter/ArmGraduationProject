@@ -82,9 +82,9 @@ class DNNModel:
         cpp_float_type = "float"
 
         cpp_code = ""
-        cpp_code += "const {0} h_mat[{1}][{2}] = {3};\n".format(cpp_float_type,h_mat.shape[0],h_mat.shape[1],h_values_text)
-        cpp_code += "const {0} o1_mat[{1}][{2}] = {3};\n".format(cpp_float_type,o1_mat.shape[0],o1_mat.shape[1],o1_values_text)
-        cpp_code += "const {0} o2_mat[{1}][{2}] = {3};\n".format(cpp_float_type,o2_mat.shape[0],o2_mat.shape[1],o2_values_text)
+        cpp_code += "const {0} h_mat[{1}][{2}] PROGMEM  {3};\n".format(cpp_float_type,h_mat.shape[0],h_mat.shape[1],h_values_text)
+        cpp_code += "const {0} o1_mat[{1}][{2}] PROGMEM = {3};\n".format(cpp_float_type,o1_mat.shape[0],o1_mat.shape[1],o1_values_text)
+        cpp_code += "const {0} o2_mat[{1}][{2}] PROGMEM = {3};\n".format(cpp_float_type,o2_mat.shape[0],o2_mat.shape[1],o2_values_text)
         cpp_code += "const {0} input_std[{1}] = {2};\n".format(cpp_float_type,self.std.shape[0],std_text)
         cpp_code += "const {0} input_mean[{1}] = {2};\n".format(cpp_float_type,self.mean.shape[0],mean_text)
         

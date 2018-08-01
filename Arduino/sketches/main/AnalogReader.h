@@ -12,6 +12,6 @@ public:
     void Read();
     void dumpPacked();
     void dump();
-    short x0,x1,x2,x3;
+    union {struct{short x0,x1,x2,x3;};short a[4];};
 private:
 };
