@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino",
+                "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include",
+                "C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include",
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__AVR_ATmega328P__",
+                "__AVR_ENHANCED__"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino",
+                    "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include",
+                    "C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include",
+                    "C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard"
+                ],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
